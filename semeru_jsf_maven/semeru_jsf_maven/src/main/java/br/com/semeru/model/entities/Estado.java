@@ -32,7 +32,7 @@ public class Estado implements Serializable {
     }
 
     public List<Endereco> getEnderecos() {
-        return enderecos;
+        return enderecos; 
     }
 
     public void setEnderecos(List<Endereco> enderecos) {
