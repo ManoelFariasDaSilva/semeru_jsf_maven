@@ -11,7 +11,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import org.hibernate.annotations.ForeignKey;
 
-@Entity 
+@Entity
 @Table(name="tipoendereco")
 public class TipoEndereco implements Serializable {
     
