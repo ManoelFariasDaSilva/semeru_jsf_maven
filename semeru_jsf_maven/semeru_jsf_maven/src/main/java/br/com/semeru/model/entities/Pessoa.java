@@ -49,7 +49,7 @@ public class Pessoa implements Serializable {
     }
 
     public void setIdPessoa(Integer idPessoa) {
-        this.idPessoa = idPessoa;
+        this.idPessoa = idPessoa; 
     }
 
     public String getNome() {
