@@ -29,7 +29,8 @@ public class Cidade implements Serializable{
     private List<Endereco> enderecos;
     
     public Cidade() {
-    }
+        
+    } 
  
     public Integer getIdCidade() {
         return idCidade;
