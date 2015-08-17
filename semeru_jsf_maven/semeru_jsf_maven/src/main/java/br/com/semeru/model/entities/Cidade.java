@@ -30,7 +30,7 @@ public class Cidade implements Serializable{
     
     public Cidade() {
     }
-
+ 
     public Integer getIdCidade() {
         return idCidade;
     }
