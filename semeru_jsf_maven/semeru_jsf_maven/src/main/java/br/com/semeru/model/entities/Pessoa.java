@@ -7,8 +7,10 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
+import org.hibernate.annotations.ForeignKey;
 
 @Entity
 @Table(name = "pessoa")
@@ -38,6 +40,10 @@ public class Pessoa implements Serializable {
     @Temporal(javax.persistence.TemporalType.DATE)
     private Date dataDeCadastro; 
 
+    @ManyToOne(optional = false)  
+    @ForeignKey(name = "PessoaSexo")
+    private Pessoa pessoa;
+    
     public Integer getIdPessoa() {
         return idPessoa;
     }
@@ -88,15 +94,16 @@ public class Pessoa implements Serializable {
 
     public Date getDataDeCadastro() {
         return dataDeCadastro;
-    }
+    } 
 
     public void setDataDeCadastro(Date dataDeCadastro) {
         this.dataDeCadastro = dataDeCadastro;
-    }
+    } 
 
     @Override
     public int hashCode() {
-        int hash = 7;
+        int hash = 5;
+        hash = 17 * hash + Objects.hashCode(this.idPessoa);
         return hash;
     }
 
