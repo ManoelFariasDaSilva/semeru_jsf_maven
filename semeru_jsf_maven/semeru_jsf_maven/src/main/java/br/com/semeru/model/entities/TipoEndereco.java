@@ -13,7 +13,7 @@ import org.hibernate.annotations.ForeignKey;
 
 @Entity
 @Table(name="tipoendereco")
-public class TipoEndereco implements Serializable {
+public class TipoEndereco implements Serializable { 
     
     private static final long serialVersionUID = 1L;
 

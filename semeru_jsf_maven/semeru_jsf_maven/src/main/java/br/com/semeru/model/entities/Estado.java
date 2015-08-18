@@ -2,7 +2,7 @@ package br.com.semeru.model.entities;
 
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.Column;
+import javax.persistence.Column; 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import org.hibernate.annotations.ForeignKey;
 
 @Entity
 @Table(name="estado")
-public class Estado implements Serializable {
+public class Estado implements Serializable { 
     
     private static final long serialVersionUID = 1L;
     
@@ -29,7 +29,8 @@ public class Estado implements Serializable {
     private List<Endereco> enderecos;
  
     public Estado() {
-    }
+        
+    } 
 
     public List<Endereco> getEnderecos() {
         return enderecos; 

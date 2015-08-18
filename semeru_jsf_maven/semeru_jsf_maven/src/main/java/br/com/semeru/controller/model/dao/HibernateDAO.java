@@ -6,7 +6,6 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.criterion.DetachedCriteria;
-
  
 public class HibernateDAO<T> implements InterfaceDAO<T>, Serializable{
 

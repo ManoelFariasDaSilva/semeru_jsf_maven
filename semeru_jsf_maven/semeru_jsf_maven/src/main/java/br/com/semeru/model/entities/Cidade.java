@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import org.hibernate.annotations.ForeignKey;
 
 @Entity
-@Table(name="cidade")
+@Table(name="nome")
 public class Cidade implements Serializable{
     
     private static final long serialVersionUID =  1L; 
@@ -28,7 +28,7 @@ public class Cidade implements Serializable{
     @ForeignKey(name="EnderecoCidade")
     private List<Endereco> enderecos;
     
-    public Cidade() {
+    public Cidade() { 
         
     } 
  
