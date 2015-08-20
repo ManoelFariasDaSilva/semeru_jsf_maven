@@ -41,7 +41,7 @@ public class Pessoa implements Serializable {
     private Date dataDeNascimento;
     @Column(name = "DataDeCadastro",nullable = false)
     @Temporal(javax.persistence.TemporalType.DATE)
-    private Date dataDeCadastro; 
+    private Date dataDeCadastro;
 
     @OneToOne(mappedBy = "pessoa", fetch = FetchType.LAZY)
     @ForeignKey(name = "EnderecoPessoa")

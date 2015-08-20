@@ -46,7 +46,7 @@ public class Endereco implements Serializable {
     @JoinColumn(name = "IdPessoa", referencedColumnName = "IdPessoa")
     private Pessoa pessoa;
     
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @ManyToOne(optional = false, fetch = FetchType.LAZY) 
     @ForeignKey(name="EnderecoTipoLogradouro")
     @JoinColumn(name = "IdTipoLogradouro", referencedColumnName = "IdTipoLogradouro")
     private TipoLogradouro tipoLogradouro;

@@ -7,6 +7,8 @@ import org.hibernate.service.ServiceRegistryBuilder;
 
 public class HibernateUtil {
     
+    // Essa classe faz conexao com o banco de dados
+    
     private static final SessionFactory sessionFactory;
     public static final String HIBERNATE_SESSION = "hibernate_session";
     
