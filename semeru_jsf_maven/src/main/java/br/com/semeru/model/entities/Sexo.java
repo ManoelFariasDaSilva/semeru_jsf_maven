@@ -29,8 +29,8 @@ public class Sexo implements Serializable {
     private List<Pessoa> pessoas;
     
     public Sexo() {
-    }
-
+    } 
+ 
     public Integer getIdSexo() {
         return idSexo;
     }
